@@ -13,3 +13,42 @@
         }
     }
 }
+
+.popup {
+    position: absolute;
+    z-index: 5;
+    opacity: 0;
+    bottom: 0;
+    left: -50%;
+    right: 0;
+    top: 10%;
+    width: 70%;
+    min-height: 500px;
+    background: rgba(255, 255, 255, .93);
+    margin: 0 auto;
+
+    i {
+        font-size: 35px;
+        cursor: pointer;
+        float: right;
+        transition: all 0.3s;
+
+        &:hover {
+            color: #2980b9;
+        }
+    }
+
+    table {
+        width: 100%;
+
+        th {
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        td {
+            text-align: center;
+            padding-bottom: 15px;
+        }
+    }
+}

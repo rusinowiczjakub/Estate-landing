@@ -182,3 +182,31 @@ section {
   grid-row-gap: 5ch; }
   .months-grid div h3 {
     color: #2980b9; }
+
+.popup {
+  position: absolute;
+  z-index: 5;
+  opacity: 0;
+  bottom: 0;
+  left: -50%;
+  right: 0;
+  top: 10%;
+  width: 70%;
+  min-height: 500px;
+  background: rgba(255, 255, 255, 0.93);
+  margin: 0 auto; }
+  .popup i {
+    font-size: 35px;
+    cursor: pointer;
+    float: right;
+    transition: all 0.3s; }
+    .popup i:hover {
+      color: #2980b9; }
+  .popup table {
+    width: 100%; }
+    .popup table th {
+      text-align: center;
+      padding-bottom: 15px; }
+    .popup table td {
+      text-align: center;
+      padding-bottom: 15px; }
