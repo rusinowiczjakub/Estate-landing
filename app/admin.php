@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION['token']) && !isset($_SESSION['userData']))
+{
+    header( 'Location: login.php' );
+    exit();
+} else {
+    echo '
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,6 +35,10 @@
         </ul>
     </nav>
 
+    <div class="bg-img">
+
+    </div>
+
     <section>
         <div id="contentPlace">
         </div>
@@ -50,3 +64,6 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpsA-_iuigd4yHtEdoPSg-Klc
 <script src="js/slider.js" type="text/javascript"></script>
 </body>
 </html>
+';
+
+}
